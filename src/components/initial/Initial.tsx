@@ -1,5 +1,9 @@
 import './Initial.scss'
 
 export function Initial() {
-  return <h1 className="h1">Hello World</h1>
+  return (
+    <div className="content">
+      <h1 className="h1">Hello World</h1>
+    </div>
+  )
 }

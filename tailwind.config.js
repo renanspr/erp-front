@@ -18,6 +18,9 @@ module.exports = {
 
     extend: {},
   },
+  corePlugins: {
+    container: false,
+  },
   plugins: [
     // https://github.com/karolis-sh/tailwind-bootstrap-grid
     tailwindBootstrapGrid({
