@@ -10,7 +10,6 @@
     "prettier",
     "plugin:prettier/recommended" // Make sure this is always the last configuration in the extends array.
   ],
-  "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaFeatures": {
       "jsx": true
@@ -18,12 +17,12 @@
     "ecmaVersion": "latest",
     "sourceType": "module"
   },
-  "plugins": ["react", "@typescript-eslint", "react-hooks"],
+  "plugins": ["react", "react-hooks"],
   "settings": {
     "import/resolver": {
       "node": {
         "paths": ["src"],
-        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+        "extensions": [".js", ".jsx"]
       }
     }
   },
@@ -36,18 +35,17 @@
     "no-use-before-define": "off",
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
-    "@typescript-eslint/no-use-before-define": ["error"],
     "import/no-extraneous-dependencies": [
       "error",
-      { "devDependencies": ["./vite.config.ts", "./tailwind.config.js"] }
+      { "devDependencies": ["./vite.config.js", "./tailwind.config.js"] }
     ],
-    "react/jsx-filename-extension": ["warn", { "extensions": [".tsx"] }],
+    "react/jsx-filename-extension": ["warn", { "extensions": [".jsx"] }],
     "import/extensions": [
       "error",
       "ignorePackages",
       {
-        "ts": "never",
-        "tsx": "never"
+        "js": "never",
+        "jsx": "never"
       }
     ],
     "import/no-unresolved": 0

@@ -1,4 +1,4 @@
-import { Initial } from 'components/initial'
+import { Initial } from '../components/Initial'
 
 export function App() {
   return <Initial />
